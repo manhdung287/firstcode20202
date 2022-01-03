@@ -5,6 +5,9 @@ module.exports = {
       colors:{
         gray:{
           'header':'#262626',
+        },
+        purple:{
+          'base':'var(--main)'
         }
       }
     },

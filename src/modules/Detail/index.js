@@ -9,17 +9,14 @@ function Detail() {
 
     };
     return (
-        <div className='h-96'>
-            <div className='p-5 mt-10'>
-                <Highlightable ranges={ranges}
-                    enabled={true}
-                    onTextHighlighted={onTextHighlightedCallback}
-                    onMouseOverHighlightedWord={onMouseOverHighlightedWordCallback}
-                    highlightStyle={{
-                        backgroundColor: '#ffcc80'
-                    }}
-                    text={"Lorem ipsum is a pseudo-Latin text used in web design,  "}
-                />
+        <div className='h-96 pt-16'>
+            <div className='p-5 mt-10 ml-60'>
+                <div>
+                    <a href='#' className='btn btn-default btn-animation text-white relative block w-40 p-5'>
+                    <span> Text test Hover</span>
+                       
+                    </a>
+                </div>
             </div>
         </div>
     );

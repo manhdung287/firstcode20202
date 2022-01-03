@@ -12,7 +12,7 @@ function Social() {
                 <SocialIcon icon={<AiOutlineDribbble  fontSize={19}/>} link={'https://dribbble.com/'} />
             </div>
             <span className='text-gray-500 copyringht'>
-                © 2021 Mugi Theme.
+                © 2022 MD.
             </span>
         </div>
     );

@@ -7,12 +7,7 @@ export default class MyDocument extends Document {
         return (
             <Html lang="vi"  >
                 <Head>
-                    <link
-                        rel="preload"
-                        href="/fonts/Roboto-Medium.ttf"
-                        as="font"
-                        crossOrigin=""
-                    />
+ 
                     <link rel="shortcut icon" href="/favicon.ico" />
                     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
                     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
