@@ -5,7 +5,7 @@ import Title from 'lib/Title';
 
 function Services() {
     return (
-        <div className='border-t border-solid border-gray-700'>
+        <div className='border-t border-b border-solid border-gray-700'>
         <div className='  py-28 container'>
             <Title text={'Services'} className={'pb-10'}/>
             <div className='grid grid-cols-3 '>

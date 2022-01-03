@@ -7,18 +7,11 @@ import { SetDarkmode } from 'src/ultils/actions';
 import Button, { ButtonBase } from 'lib/Button';
 
 
-function Header({ onChangeMode }) {
-
-    const { darkmode } = useSelector(state => state);
-    const dispatch = useDispatch();
-
-    const onSetDarkmode = () => {
-        dispatch(SetDarkmode(!darkmode))
-    }
-
+function Header() {
+ 
     return (
         <div className='flex py-3 justify-between px-5 items-center bg-gray-header fixed top-0 left-0 w-screen z-50'>
-            <Logo darkmode={darkmode} />
+            <Logo   />
             <ButtonBase text='Buy now' className='btn-buy border-0 text-sm text-white' />
         </div>
     );

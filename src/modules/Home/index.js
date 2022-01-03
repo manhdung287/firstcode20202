@@ -19,9 +19,9 @@ function Home() {
             <div className='border-l border-gray-700 border-solid'>
                 <WellCome />
                 <Services />
-                <Contact/>
                 <Skills/>
                 <Timer/>
+                <WellCome />
             </div>
         </div>
     );

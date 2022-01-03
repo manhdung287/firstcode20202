@@ -43,7 +43,8 @@ html {
   font-size: 14px;
 }
 .menu-item {
-  padding: 10px 0;
+  margin: 10px 0;
+  line-height: 1;
 }
 //Loading
 .middle {
@@ -95,8 +96,11 @@ html {
   font-weight: 400;
   font-size: 14px;
 }
-
-.meter { 
+.menu-item:hover > span {
+  top: 60%;
+  transition: ease-in-out 0.5s;
+}
+.meter {
   height: 5px;
   position: relative;
   background: #f3efe6;
@@ -109,14 +113,20 @@ html {
 }
 
 .progress {
-  background-color: #e4c465;
+  background-color: var(--main);
   animation: progressBar 3s ease-in-out;
-  animation-fill-mode:both; 
+  animation-fill-mode: both;
 }
-
+.active >span{
+  top: 60%;
+}
 @keyframes progressBar {
-0% { width: 0; }
-100% { width: 100%; }
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
 }
 
 @keyframes loader {
@@ -125,7 +135,7 @@ html {
   }
   50% {
     transform: scaleY(1);
-    background: rgb(172, 245, 245);
+    background: var(--main);
   }
   100% {
     transform: scaleY(0.1);

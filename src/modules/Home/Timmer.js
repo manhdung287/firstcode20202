@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-function Timmer(props) {
+function Timmer() {
     const [timer, setCounter] = useState(0);
 
     useEffect(() => {
