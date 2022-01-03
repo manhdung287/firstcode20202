@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+      "baseUrl": "./",
+      "target": "es5",
+      "paths": {
+        "lib/*": ["./src/lib/*"],
+        "modules/*": ["./src/modules/*"]
+      }
+    },
+    "exclude": ["node_modules", "build", "dist", ".next"]
+  }
+  

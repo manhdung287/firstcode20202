@@ -1,0 +1,23 @@
+.button {
+  background: #fff;
+  padding: 10px;
+  border: 1px solid #000;
+  columns: #000;
+  border-radius: 5px;
+}
+.container {
+  margin: auto;
+}
+.input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #000;
+}
+
+html{
+  font-family: 'roboto', 'Arial Narrow', Arial, sans-serif;
+}
+@font-face {
+  font-family: 'roboto';
+  src: url('/fonts/Roboto-Medium.ttf');
+}

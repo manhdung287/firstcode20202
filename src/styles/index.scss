@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'reset.scss';
+@import 'base.scss';
+@import 'custom.scss';
+@import 'responsive.scss';
+@import 'glider-js/glider.min.css';
+@import "slick-carousel/slick/slick.css"; 
+@import "slick-carousel/slick/slick-theme.css";
