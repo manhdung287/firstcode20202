@@ -1,8 +1,10 @@
 import React from 'react';
 
-function Button({className, onClick, icons, text}){
+function Button({className, onClick, icons, text ,bgAnimation,type}){
+  const _type = type?' ':' ';
   return (
-    <button className={' button ' + className} onClick={onClick}>
+    <button className={' button relative ' + className} onClick={onClick}>
+      <span className={'animation-btn' + bgAnimation}/>
       {text && <span className='text-btn'>{text}</span>}
       {icons}
     </button>
