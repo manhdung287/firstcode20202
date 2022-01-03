@@ -12,6 +12,9 @@ module.exports = {
         gray:{
           'base':'var(--gray)'
         },
+      },
+      width:{
+        'w1':'1px'
       }
     },
   },  

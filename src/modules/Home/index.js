@@ -2,6 +2,7 @@
 import Button from 'lib/Button';
 import React, { useEffect, useState } from 'react';
 import Contact from './Contact';
+import Experience from './Experience';
 
 import Header from './Header';
 import Services from './Service';
@@ -20,8 +21,7 @@ function Home() {
                 <WellCome />
                 <Services />
                 <Skills/>
-                <Timer/>
-                <WellCome />
+                <Experience/>
             </div>
         </div>
     );

@@ -3,7 +3,6 @@ import React, { useRef } from 'react';
 
 function Skills() {
 
-    
     return (
         <div className=' py-28 container'   >
             <Title text={'Skills'} />
@@ -22,8 +21,8 @@ function SkillItem({ title, ratio }) {
     return (
         <div className='py-4'>
             <div className='flex justify-between items-center mb-4'>
-                <p>{title}</p>
-                <p>{ratio}%</p>
+                <p className='text-base'>{title}</p>
+                <p className='text-gray-600 text-sm'>{ratio}%</p>
             </div>
             <div className="meter">
                 <span style={{ width: `${ratio}%` }}><span className="progress"></span></span>
