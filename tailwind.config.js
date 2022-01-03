@@ -8,7 +8,10 @@ module.exports = {
         },
         purple:{
           'base':'var(--main)'
-        }
+        },
+        gray:{
+          'base':'var(--gray)'
+        },
       }
     },
   },  
