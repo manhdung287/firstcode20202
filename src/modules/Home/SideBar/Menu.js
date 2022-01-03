@@ -22,7 +22,7 @@ function MenuItem({ text, to, className, onClick }) {
         <a href={to} className={'uppercase text-sm extrabold menu-item overflow-hidden '  } onClick={onClick}>
             <span className={' relative menu-item '+ className}>
                 {text}
-                <span className='w-full absolute h-1 top-full left-0 z-10 bg-purple-base' />
+                <span className='w-full absolute h-2 top-full left-0 -z-10 bg-purple-base' />
             </span>
         </a>
     );
