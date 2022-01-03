@@ -15,7 +15,7 @@ html {
 .home {
   overflow: hidden;
   display: grid;
-  grid-template-columns: 230px 1fr;
+  grid-template-columns: 300px 1fr;
 }
 .home-darkmode {
   background: #000;
@@ -33,7 +33,7 @@ html {
   top: 54px;
   left: 0;
   z-index: 99;
-  width: 230px;
+  width: 300px;
   height: calc(100vh - 54px);
   background: #000;
 }
@@ -96,13 +96,36 @@ html {
   font-size: 14px;
 }
 
+.meter { 
+  height: 5px;
+  position: relative;
+  background: #f3efe6;
+  overflow: hidden;
+}
+
+.meter span {
+  display: block;
+  height: 100%;
+}
+
+.progress {
+  background-color: #e4c465;
+  animation: progressBar 3s ease-in-out;
+  animation-fill-mode:both; 
+}
+
+@keyframes progressBar {
+0% { width: 0; }
+100% { width: 100%; }
+}
+
 @keyframes loader {
   0% {
     transform: scaleY(0.1);
   }
   50% {
     transform: scaleY(1);
-    background: yellowgreen;
+    background: rgb(172, 245, 245);
   }
   100% {
     transform: scaleY(0.1);

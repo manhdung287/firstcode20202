@@ -5,7 +5,7 @@ import UserInfor from './UserInfor';
 
 function SideBar({ }) {
     return (
-        <div className='sidebar p-10  flex flex-col justify-between'>
+        <div className='sidebar p-12  flex flex-col justify-between'>
             <div>
                 <UserInfor />
                 <Menu />

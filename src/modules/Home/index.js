@@ -6,6 +6,8 @@ import Contact from './Contact';
 import Header from './Header';
 import Services from './Service';
 import SideBar from './SideBar';
+import Skills from './Skills';
+import Timer from './Timmer';
 import WellCome from './Wellcome';
 
 
@@ -18,6 +20,8 @@ function Home() {
                 <WellCome />
                 <Services />
                 <Contact/>
+                <Skills/>
+                <Timer/>
             </div>
         </div>
     );
