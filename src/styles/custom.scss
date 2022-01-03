@@ -1,11 +1,26 @@
-
+html {
+  font-family: "monsterat", "Arial Narrow", Arial, sans-serif;
+}
+@font-face {
+  font-family: "monsterat";
+  src: url("/fonts/Montserrat-Medium.ttf");
+}
+@font-face {
+  font-family: "monsterat-extrabold";
+  src: url("/fonts/Montserrat-ExtraBold.ttf");
+}
+.extrabold {
+  font-family: "monsterat-extrabold", "Arial Narrow", Arial, sans-serif;
+}
 .home {
   overflow: hidden;
+  display: grid;
+  grid-template-columns: 230px 1fr;
 }
-.home-darkmode{
+.home-darkmode {
   background: #000;
 }
-.home-nomal{
+.home-nomal {
   background: #fff;
 }
 .header {
@@ -13,34 +28,23 @@
   justify-content: space-between;
   padding: 20px 0;
 }
-
-.search {
-  display: flex;
-  align-items: center;
-  position: relative;
-}
-.icons-search{
-  position: absolute;
-  top: 50%;
-  left: 12px;
-  font-size: 22px;
-  z-index: 2;
-  transform: translateY(-50%);
-}
-.input-search{
-  padding: 15px 25px;
-  padding-left: 40px;
-  border-radius: 50px;
-  width: 250px;
-  font-size: 16px;
-  background: rgb(34, 34, 34);
-  color: rgb(136, 136, 136);
-  width: 400px;
-}
-.card-item{
-  background: rgb(37, 37, 37);
+.sidebar {
+  position: fixed;
+  top: 54px;
+  left: 0;
+  z-index: 99;
+  width: 230px;
+  height: calc(100vh - 54px);
+  background: #000;
 }
 
+.copyringht {
+  color: #999;
+  font-size: 14px;
+}
+.menu-item {
+  padding: 10px 0;
+}
 //Loading
 .middle {
   top: 50%;
@@ -82,6 +86,14 @@
 }
 .bar8 {
   animation-delay: 0.8s;
+}
+
+.btn-buy {
+  background: #82b440;
+  box-shadow: 0 2px 0 #6f9a37;
+  padding: 5px 20px;
+  font-weight: 400;
+  font-size: 14px;
 }
 
 @keyframes loader {

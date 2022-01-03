@@ -1,5 +1,4 @@
-.button {
-  background: #fff;
+.buttonbase {
   padding: 10px;
   border: 1px solid #000;
   columns: #000;
@@ -14,10 +13,13 @@
   border: 1px solid #000;
 }
 
-html{
-  font-family: 'roboto', 'Arial Narrow', Arial, sans-serif;
-}
-@font-face {
-  font-family: 'roboto';
-  src: url('/fonts/Roboto-Medium.ttf');
+.button{
+  border-radius: 0;
+  font-size: 14px;
+  font-weight: 900;
+  overflow: hidden;
+  line-height: 1;
+  padding: 15px 24px;
+  position: relative;
+  text-transform: uppercase;
 }
