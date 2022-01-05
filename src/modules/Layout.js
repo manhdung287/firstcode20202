@@ -4,7 +4,7 @@ import SideBar from './Home/SideBar';
 
 function Layout({ children }) {
     return (
-        <div className='bg-black'>
+        <div className='bg-black overflow-hidden'>
             <Header />
             <SideBar/>
             {children}

@@ -14,8 +14,8 @@ html {
 }
 .home {
   overflow: hidden;
-  display: grid;
-  grid-template-columns: 300px 1fr;
+  transform: translateX(0);
+  transition: ease-in-out 0.5s;
 }
 .home-darkmode {
   background: #000;
@@ -31,11 +31,13 @@ html {
 .sidebar {
   position: fixed;
   top: 54px;
-  left: 0;
+  left: 0px;
   z-index: 99;
   width: 300px;
   height: calc(100vh - 54px);
   background: #000;
+  transform: translateX(-300px);
+  transition: ease-in-out 0.5s;
 }
 
 .copyringht {
@@ -48,8 +50,19 @@ html {
   padding: 3px 0;
 }
 
-
-
+.overlay {
+  display: none;
+  position: fixed;
+  z-index: 99;
+  right: 0;
+  top: 54px;
+  width: calc(100vw - 300px);
+  height: calc(100vh - 54px);
+  background: rgba($color: #000000, $alpha: 0.4);
+}
+.overlay.open{
+  display: block;
+}
 .btn-buy {
   background: #82b440;
   box-shadow: 0 2px 0 #6f9a37;
@@ -78,8 +91,16 @@ html {
   animation: progressBar 3s ease-in-out;
   animation-fill-mode: both;
 }
-.active >span{
+.active > span {
   top: 60%;
+}
+
+.sidebar.open {
+  transform: translateX(0);
+}
+
+.home.open {
+  transform: translateX(300px);
 }
 @keyframes progressBar {
   0% {
@@ -89,4 +110,3 @@ html {
     width: 100%;
   }
 }
-

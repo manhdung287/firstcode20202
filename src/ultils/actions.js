@@ -12,3 +12,7 @@ export const SetDarkmode = payload =>({
     type:CONST.DARKMODE,
     payload
 })
+export const SetOpenMenu = payload =>({
+    type:CONST.OPENMENU,
+    payload
+})

@@ -10,7 +10,8 @@ module.exports = {
           'base':'var(--main)'
         },
         gray:{
-          'base':'var(--gray)'
+          'base':'var(--gray)',
+          'header':'#262626'
         },
       },
       width:{

@@ -1,5 +1,5 @@
 
-import {  DarkmodeReducer, LoadingReducer, PointReducer   } from './reducer';
+import {  DarkmodeReducer, LoadingReducer, OpenMenuReducer, PointReducer   } from './reducer';
 import {useMemo} from 'react';
 import {applyMiddleware, combineReducers, createStore} from 'redux';
 import {composeWithDevTools} from 'redux-devtools-extension';
@@ -10,6 +10,7 @@ const rootReducer = combineReducers({
   point:PointReducer,
   loading:LoadingReducer,
   darkmode:DarkmodeReducer,
+  openmenu:OpenMenuReducer,
 });
 
 //const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
