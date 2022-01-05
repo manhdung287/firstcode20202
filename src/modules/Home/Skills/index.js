@@ -4,7 +4,7 @@ import React, { useRef } from 'react';
 function Skills() {
 
     return (
-        <div className='px-6 md:px-0 py-28 container'   >
+        <div className='px-8 md:px-0 py-28 container'   >
             <Title text={'Skills'} />
             <div className='my-20 md:grid grid-cols-2 gap-10'>
                 <SkillItem title={'Coding'} ratio={80} />

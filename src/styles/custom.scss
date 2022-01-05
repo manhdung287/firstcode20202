@@ -102,6 +102,11 @@ html {
 .home.open {
   transform: translateX(300px);
 }
+
+.line{
+  width: 1px;
+  height: 100%;
+}
 @keyframes progressBar {
   0% {
     width: 0;

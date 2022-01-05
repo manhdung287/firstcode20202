@@ -2,7 +2,7 @@ import React from 'react';
 
 function Title({text,className}) {
     return (
-        <p className={'text-3xl extrabold uppercase '+ className}>
+        <p className={'text-3xl extrabold uppercase pb-10  '+ className}>
             {text}
         </p>
     );
